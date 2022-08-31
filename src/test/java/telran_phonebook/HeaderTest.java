@@ -11,46 +11,30 @@ import static java.lang.Thread.sleep;
 public class HeaderTest extends TestBase{
 
     @BeforeMethod
-    public void ensurePreconditions() {
-        if (!isElementPresent(By.xpath("//a[contains(.,'LOGIN')]"))) {
-            driver.findElement(By.xpath("//button[contains(.,'Sign Out')]")).click();
+    public void ensurePreconditions() throws InterruptedException {
+        if (isSignOutButtonPresent()) {
+            click(By.xpath("//button[contains(.,'Sign Out')]"));
         } else {
-            //click on LOGIN link
-            driver.findElement(By.xpath("//a[contains(.,'LOGIN')]")).click();
+           clickOnLoginLink();
         }
+        login("monketester13@gmail.com", "1q2W3e4R_");
+        sleep(600);
     }
 
-
-    public void loginExistedUser() throws InterruptedException {
-        //assert is registration form displayed
-        Assert.assertTrue(isElementPresent2(By.cssSelector(".login_login__3EHKB")));
-        //fill registration form
-        driver.findElement(By.cssSelector("[placeholder='Email']")).click();
-        driver.findElement(By.cssSelector("[placeholder='Email']")).clear();
-        driver.findElement(By.cssSelector("[placeholder='Email']")).sendKeys("monketester23@gmail.com");
-        driver.findElement(By.cssSelector("[placeholder='Password']")).click();
-        driver.findElement(By.cssSelector("[placeholder='Password']")).clear();
-        driver.findElement(By.cssSelector("[placeholder='Password']")).sendKeys("1q2W3e4R_");
-        //click on registration button
-        driver.findElement(By.xpath("//button[contains(.,'Login')]")).click();
-        sleep(100);
-    }
 
     @Test
-    public void checkHeaderElementsAuthorized() throws InterruptedException {
-        loginExistedUser();
+    public void checkHeaderElementsAuthorized() {
         Assert.assertTrue(isElementPresent(By.cssSelector("h1")));
         Assert.assertTrue(isElementPresent2(By.xpath("//a[contains(.,'HOME')]")));
         Assert.assertTrue(isElementPresent(By.xpath("//a[contains(.,'ABOUT')]")));
         Assert.assertTrue(isElementPresent(By.xpath("//a[contains(.,'CONTACTS')]")));
         Assert.assertTrue(isElementPresent(By.xpath("//a[contains(.,'ADD')]")));
         Assert.assertTrue(isElementPresent(By.xpath("//button[contains(.,'Sign Out')]")));
-        driver.findElement(By.xpath("//button[contains(.,'Sign Out')]")).click();
-
     }
 
     @Test
     public void checkHeaderElementsUnauthorized() {
+        click(By.xpath("//button[contains(.,'Sign Out')]"));
         Assert.assertTrue(isElementPresent(By.cssSelector("h1")));
         Assert.assertTrue(isElementPresent2(By.xpath("//a[contains(.,'HOME')]")));
         Assert.assertTrue(isElementPresent(By.xpath("//a[contains(.,'ABOUT')]")));
