@@ -12,7 +12,7 @@ public class ApplicationManager{
     UserHelper user;
     ContactHelper contact;
     HeaderHelper header;
-    HomaPageHelper homepage;
+    HomePageHelper homepage;
 
 
     public UserHelper getUser() {
@@ -27,7 +27,7 @@ public class ApplicationManager{
         return header;
     }
 
-    public HomaPageHelper getHomepage() {
+    public HomePageHelper getHomepage() {
         return homepage;
     }
     public void init() {
@@ -38,7 +38,7 @@ public class ApplicationManager{
         user = new UserHelper(driver);
         contact = new ContactHelper(driver);
         header = new HeaderHelper(driver);
-        homepage = new HomaPageHelper(driver);
+        homepage = new HomePageHelper(driver);
     }
 
     public void stop() {

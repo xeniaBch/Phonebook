@@ -26,7 +26,7 @@ public class LoginTest extends TestBase {
     @Test
     public void loginNegativeTest(){
         Assert.assertTrue(app.getUser().isRegistrationFormPresent());
-        app.getUser().login("monketester@gmail.com", "1q2W3e4R_");
+        app.getUser().login("monketester13@gmail.com", "1q2W3e4KK_");
         app.getUser().pause(600);
         Assert.assertTrue(app.getUser().isAlertPresent());
         Assert.assertTrue(app.getUser().is500ErrorMessagePresent());

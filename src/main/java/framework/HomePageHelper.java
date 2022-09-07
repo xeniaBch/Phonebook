@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
-public class HomaPageHelper extends HelperBase{
-    public HomaPageHelper(WebDriver driver) {
+public class HomePageHelper extends HelperBase{
+    public HomePageHelper(WebDriver driver) {
         super(driver);
     }
 
