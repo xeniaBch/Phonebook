@@ -38,7 +38,7 @@ public class TestBase {
         logger.info("PASSED " + result.getMethod().getMethodName());
         }
         else {
-            logger.info("FAILED " + result.getMethod().getMethodName());
+            logger.info("FAILED " + result.getMethod().getMethodName() + "screenshot path is: " + app.getUser().takeScreenshot());
         }
 
         logger.info("______________________________________");
