@@ -1,3 +1,0 @@
-3916 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginPositiveTest with data: []
-15887 [Test worker] INFO  telran_phonebook.tests.TestBase - FAILED loginPositiveTestscreenshot path is: C:\Users\79538\IdeaProjects\Autotests\Phonebook\screenshots\screen1662541659.png
-15888 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________

@@ -18,7 +18,7 @@ public class CreateAccountTest extends TestBase {
     @Test
     public void createAccountPositiveTest(){
         Assert.assertTrue(app.getUser().isRegistrationFormPresent());
-        app.getUser().registration("monketester34@gmail.com", "1q2W3e4R_");
+        app.getUser().registration("monketester36@gmail.com", "1q2W3e4R_");
         app.getUser().pause(1000);
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }

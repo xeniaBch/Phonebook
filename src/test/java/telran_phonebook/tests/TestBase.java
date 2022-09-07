@@ -1,6 +1,7 @@
 package telran_phonebook.tests;
 
 import ch.qos.logback.classic.Logger;
+import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -13,7 +14,7 @@ import java.util.Arrays;
 
 public class TestBase {
 
-    protected static ApplicationManager app = new ApplicationManager();
+    protected static ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
     Logger logger = (Logger) LoggerFactory.getLogger(TestBase.class);
 
     @BeforeMethod

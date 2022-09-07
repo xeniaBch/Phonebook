@@ -15,7 +15,7 @@ public class LoginTest extends TestBase {
         }
     }
 
-    @Test
+    @Test (priority = 2)
     public void loginPositiveTest(){
         Assert.assertTrue(app.getUser().isRegistrationFormPresent());
         app.getUser().login("monketester13@gmail.com", "1q2W3e4R_");
@@ -23,7 +23,7 @@ public class LoginTest extends TestBase {
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
 
-    @Test
+    @Test (priority = 1)
     public void loginNegativeTest(){
         Assert.assertTrue(app.getUser().isRegistrationFormPresent());
         app.getUser().login("monketester13@gmail.com", "1q2W3e4KK_");

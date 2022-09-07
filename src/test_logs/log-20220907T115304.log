@@ -1,0 +1,12 @@
+5502 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method createAccountNegativeTest with data: []
+17339 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED createAccountNegativeTest
+17340 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+19936 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method createAccountPositiveTest with data: []
+32195 [Test worker] INFO  telran_phonebook.tests.TestBase - FAILED createAccountPositiveTestscreenshot path is: C:\Users\79538\IdeaProjects\Autotests\Phonebook\screenshots\screen1662544416.png
+32196 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+34849 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginNegativeTest with data: []
+46313 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED loginNegativeTest
+46313 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+48982 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginPositiveTest with data: []
+60293 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED loginPositiveTest
+60293 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________

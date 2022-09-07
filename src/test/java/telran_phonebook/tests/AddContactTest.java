@@ -28,7 +28,7 @@ public class AddContactTest extends TestBase {
         }
     }
 
-    @Test
+    @Test (priority = 1)
     public void addContactPositiveTest() {
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         app.getContact().addContact(new Contact()
@@ -40,9 +40,10 @@ public class AddContactTest extends TestBase {
                 .setComment("good person"));
         app.getContact().pause(600);
         Assert.assertTrue(app.getContact().isContactCreated("John"));
+        app.getContact().deleteContact();
     }
 
-    @Test(dataProvider = "newContact", dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "newContact", dataProviderClass = DataProviders.class, priority = 2)
     public void addContactPositiveTestFromDataProvider(String name, String surname, String phone, String email, String address, String comment) {
         app.getContact().addContact(new Contact()
                 .setName(name)
@@ -55,7 +56,7 @@ public class AddContactTest extends TestBase {
     }
 
 
-    @Test(dataProvider = "newContactWithCsv",  dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "newContactWithCsv",  dataProviderClass = DataProviders.class, priority = 3)
     public void addContactPositiveTestFromDataProviderWithCsv(Contact contact) {
         app.getContact().addContact(contact);
         logger.info(String.valueOf(app.getContact().isContactCreated(contact.getName())));
@@ -65,8 +66,8 @@ public class AddContactTest extends TestBase {
 
     }
 
-    @AfterMethod
+    /*@AfterMethod
     public void removeContactPositiveTest(){
         app.getContact().deleteContact();
-    }
+    }*/
 }
