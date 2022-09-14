@@ -46,10 +46,7 @@ public class HttpClientTests {
                         "}", ContentType.APPLICATION_JSON)
                 .execute();
 
-        String responseJson = response.returnContent().asString();
+        String responseJson = response.returnResponse().toString();
         System.out.println(responseJson);
-        JsonElement element = JsonParser.parseString(responseJson);
-        JsonElement message = element.getAsJsonObject().get("message");
-        System.out.println(message.getAsString());
     }
 }
