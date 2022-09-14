@@ -47,3 +47,14 @@ public class TestBase {
 
 
 }
+
+//@BeforeTest
+    //@BeforeMethod
+        //@BeforeClass
+            //@BeforeSuit
+                //@BeforeGroups
+                //@AfterGroups
+            //@AfterSuit
+        //@AfterClass
+    //@AfterMethod
+//@AfterTest
