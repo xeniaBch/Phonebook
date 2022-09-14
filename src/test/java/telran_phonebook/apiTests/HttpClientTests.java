@@ -13,6 +13,8 @@ import java.io.IOException;
 public class HttpClientTests {
 
     private String email = "monketester13@gmail.com";
+    private String wrongEmail = "monke@tester13@gmail.com";
+    private String unregisterdEmail = "monketester666@gmail.com";
     private String password = "1q2W3e4R_";
     private String wrongPassword = "1q2W3e400";
 
@@ -37,12 +39,40 @@ public class HttpClientTests {
     }
 
     @Test
-    public void loginHttpClientErrorTest() throws ClientProtocolException, IOException {
+    public void loginHttpClientWrongPasswordTest() throws IOException {
 
         Response response = Request.Post("https://contacts-telran.herokuapp.com/api/login")
                 .bodyString("{\n" +
                         "  \"email\": \"" + email + "\",\n" +
                         "  \"password\": \"" + wrongPassword + "\"\n" +
+                        "}", ContentType.APPLICATION_JSON)
+                .execute();
+
+        String responseJson = response.returnResponse().toString();
+        System.out.println(responseJson);
+    }
+
+    @Test
+    public void loginHttpClientUnregistredEmailTest() throws IOException {
+
+        Response response = Request.Post("https://contacts-telran.herokuapp.com/api/login")
+                .bodyString("{\n" +
+                        "  \"email\": \"" + unregisterdEmail + "\",\n" +
+                        "  \"password\": \"" + password + "\"\n" +
+                        "}", ContentType.APPLICATION_JSON)
+                .execute();
+
+        String responseJson = response.returnResponse().toString();
+        System.out.println(responseJson);
+    }
+
+    @Test
+    public void loginHttpClientWrongEmailFormatTest() throws IOException {
+
+        Response response = Request.Post("https://contacts-telran.herokuapp.com/api/login")
+                .bodyString("{\n" +
+                        "  \"email\": \"" + wrongEmail + "\",\n" +
+                        "  \"password\": \"" + password + "\"\n" +
                         "}", ContentType.APPLICATION_JSON)
                 .execute();
 
