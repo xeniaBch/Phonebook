@@ -21,32 +21,36 @@ test {
     useTestNG()
 }
 
+task testy(type:Test) {
+    useTestNG()
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
 
 task testUser(type:Test) {
-    useTestNG(){
+    useTestNG() {
         suites 'src/test/resources/testngUser.xml'
     }
-    if(project.hasProperty('browser')){
+    if (project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
 }
-
 
 task testSmoke(type:Test) {
-    useTestNG(){
-        suites 'src/test/resources/testngSmoke.xml'
+    useTestNG() {
+        suites 'src/test/resources/testngSmoky.xml'
     }
-    if(project.hasProperty('browser')){
+    if (project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
 }
 
-task testExcludeName(type:Test) {
-    useTestNG(){
-        suites 'src/test/resources/testngExcludeName.xml'
+task testEx(type:Test) {
+    useTestNG() {
+        suites 'src/test/resources/testngExName.xml'
     }
-    if(project.hasProperty('browser')){
+    if (project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
-
 }
