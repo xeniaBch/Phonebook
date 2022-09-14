@@ -13,6 +13,8 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.testng:testng:7.1.0'
     implementation 'ch.qos.logback:logback-classic:1.4.0'
+    implementation 'com.github.stephenc.monte:monte-screen-recorder:0.7.7.0'
+
 }
 
 test {
@@ -22,9 +24,29 @@ test {
 
 task testUser(type:Test) {
     useTestNG(){
-        suites 'src/test/resources/testng.xml'
+        suites 'src/test/resources/testngUser.xml'
     }
     if(project.hasProperty('browser')){
         systemProperty 'browser', "${browser}"
     }
+}
+
+
+task testSmoke(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngSmoke.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+}
+
+task testExcludeName(type:Test) {
+    useTestNG(){
+        suites 'src/test/resources/testngExcludeName.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+
 }
