@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="telran_phonebook.tests.AddContactTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-09-14T10:26:49" hostname="LAPTOP-7JRM91AM" time="110.586">
+  <properties/>
+  <testcase name="addContactPositiveTest" classname="telran_phonebook.tests.AddContactTest" time="2.247"/>
+  <testcase name="addContactPositiveTestFromDataProvider[0](Nevil, Dolgopups, 015239655336, nevil.d@hogwarts, London, Griffindor)" classname="telran_phonebook.tests.AddContactTest" time="1.838"/>
+  <testcase name="addContactPositiveTestFromDataProvider[1](Ron, Whisley, 015212368321, ron.w@hogwarts, London, Griffindor)" classname="telran_phonebook.tests.AddContactTest" time="1.892"/>
+  <testcase name="addContactPositiveTestFromDataProvider[2](Germiona, Greindger, 0166533200534, germiona.g@hogwarts, London, Griffindor)" classname="telran_phonebook.tests.AddContactTest" time="1.704"/>
+  <testcase name="addContactPositiveTestFromDataProvider[3](Drako, Malfoi, 018543246546, drako.m@hogwarts, London, Slizerin)" classname="telran_phonebook.tests.AddContactTest" time="1.995"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCsv[0](Contact{name='Nevil', lastname='Dolgopups', phone='01780000011', email='nevil.d@hogwarts.com', comment='Griffindor'})" classname="telran_phonebook.tests.AddContactTest" time="2.579"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCsv[1](Contact{name='Ron', lastname='Whisley', phone='01780000012', email='ron.w@hogwarts.com', comment='Griffindor'})" classname="telran_phonebook.tests.AddContactTest" time="2.59"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCsv[2](Contact{name='Germiona', lastname='Greindger', phone='01780000013', email='germiona.g@hogwarts.com', comment='Griffindor'})" classname="telran_phonebook.tests.AddContactTest" time="2.675"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 40398
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151197.331][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:26:37 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 19684
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151213.316][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:26:53 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 31500
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151228.437][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:27:08 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 18584
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151243.791][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:27:24 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 32665
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151258.725][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:27:39 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 22130
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151273.881][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:27:54 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 47597
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151290.148][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:28:10 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 35776
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151305.897][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:28:26 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+]]></system-err>
+</testsuite>

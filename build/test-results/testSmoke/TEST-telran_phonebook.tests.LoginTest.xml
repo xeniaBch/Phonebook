@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="telran_phonebook.tests.LoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-14T10:26:21" hostname="LAPTOP-7JRM91AM" time="14.714">
+  <properties/>
+  <testcase name="loginNegativeTest" classname="telran_phonebook.tests.LoginTest" time="1.152"/>
+  <testcase name="loginPositiveTest" classname="telran_phonebook.tests.LoginTest" time="1.098"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 47822
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151170.082][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:26:10 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 31192
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1663151183.882][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+Sep. 14, 2022 12:26:24 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMATION: Detected dialect: W3C
+]]></system-err>
+</testsuite>

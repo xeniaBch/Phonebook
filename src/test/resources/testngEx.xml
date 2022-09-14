@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke" verbose="1" >
+    <test name="SmokeTest" >
+        <classes>
+            <class name="telran_phonebook.tests.LoginTest" />
+            <class name="telran_phonebook.tests.AddContactTest" />
+            <class name="telran_phonebook.tests.RemoveContactTest" />
+        </classes>
+    </test>
+
+</suite>
