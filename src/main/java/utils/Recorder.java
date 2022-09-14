@@ -1,2 +1,4 @@
-package utils;public class Recorder {
+package utils;
+
+public class Recorder {
 }
