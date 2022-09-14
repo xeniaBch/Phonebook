@@ -1,0 +1,6 @@
+3817 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginNegativeTest with data: []
+15186 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED loginNegativeTest
+15186 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+18204 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginPositiveTest with data: []
+29550 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED loginPositiveTest
+29550 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________

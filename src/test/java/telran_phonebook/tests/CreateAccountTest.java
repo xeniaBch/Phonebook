@@ -28,15 +28,15 @@ public class CreateAccountTest extends TestBase {
 
     @Test
     public void createAccountNegativeTest() throws IOException, AWTException {
-        app.getContact().deleteScreenCast();
-        app.getContact().startRecording();
+        //app.getContact().deleteScreenCast();
+        //app.getContact().startRecording();
         Assert.assertTrue(app.getUser().isRegistrationFormPresent());
         app.getUser().registration("monketester34@gmail.com", "1111111");
         app.getUser().pause(1000);
         Assert.assertTrue(app.getUser().isAlertPresent());
         Assert.assertTrue(app.getUser().isErrorMessagePresent());
-        app.getContact().pause(5000);
-        app.getContact().stopRecording();
+        //app.getContact().pause(5000);
+        //app.getContact().stopRecording();
     }
 
 

@@ -1,14 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="User" verbose="1" >
-    <test name="UserTests" >
+<suite name="Smoke" verbose="1" >
+    <test name="SmokeTest" >
         <classes>
-            <class name="telran_phonebook.tests.CreateAccountTest" >
-                <methods>
-                    <exclude name=".*Positive.*"></exclude>
-                </methods>
-            </class>
             <class name="telran_phonebook.tests.LoginTest" />
+            <class name="telran_phonebook.tests.AddContactTest" />
+            <class name="telran_phonebook.tests.RemoveContactTest" />
         </classes>
     </test>
 

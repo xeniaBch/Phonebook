@@ -1,0 +1,3 @@
+3609 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method createAccountNegativeTest with data: []
+26316 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED createAccountNegativeTest
+26316 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________

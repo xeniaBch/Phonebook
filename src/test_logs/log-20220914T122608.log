@@ -1,0 +1,36 @@
+3274 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginNegativeTest with data: []
+14570 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED loginNegativeTest
+14570 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+16874 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method loginPositiveTest with data: []
+28129 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED loginPositiveTest
+28129 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+30572 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTest with data: []
+44144 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTest
+44144 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+46141 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProvider with data: [Nevil, Dolgopups, 015239655336, nevil.d@hogwarts, London, Griffindor]
+59257 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProvider
+59257 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+61220 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProvider with data: [Ron, Whisley, 015212368321, ron.w@hogwarts, London, Griffindor]
+74408 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProvider
+74408 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+76603 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProvider with data: [Germiona, Greindger, 0166533200534, germiona.g@hogwarts, London, Griffindor]
+89591 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProvider
+89591 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+91517 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProvider with data: [Drako, Malfoi, 018543246546, drako.m@hogwarts, London, Slizerin]
+104749 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProvider
+104749 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+106684 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProviderWithCsv with data: [Contact{name='Nevil', lastname='Dolgopups', phone='01780000011', email='nevil.d@hogwarts.com', comment='Griffindor'}]
+119717 [Test worker] INFO  telran_phonebook.tests.TestBase - true
+120514 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProviderWithCsv
+120514 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+123012 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProviderWithCsv with data: [Contact{name='Ron', lastname='Whisley', phone='01780000012', email='ron.w@hogwarts.com', comment='Griffindor'}]
+136096 [Test worker] INFO  telran_phonebook.tests.TestBase - true
+136888 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProviderWithCsv
+136888 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+138591 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method addContactPositiveTestFromDataProviderWithCsv with data: [Contact{name='Germiona', lastname='Greindger', phone='01780000013', email='germiona.g@hogwarts.com', comment='Griffindor'}]
+151674 [Test worker] INFO  telran_phonebook.tests.TestBase - true
+152482 [Test worker] INFO  telran_phonebook.tests.TestBase - PASSED addContactPositiveTestFromDataProviderWithCsv
+152483 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
+155338 [Test worker] INFO  telran_phonebook.tests.TestBase - Start test with method removeContactPositiveTest with data: []
+171942 [Test worker] INFO  telran_phonebook.tests.TestBase - FAILED removeContactPositiveTestscreenshot path is: C:\Users\79538\IdeaProjects\Autotests\Phonebook\screenshots\screen1663151339.png
+171942 [Test worker] INFO  telran_phonebook.tests.TestBase - ______________________________________
