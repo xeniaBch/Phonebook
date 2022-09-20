@@ -5,7 +5,6 @@ import api.dto.AuthResponseDto;
 import api.dto.ContactDto;
 import api.dto.GetAllContactDto;
 import com.jayway.restassured.RestAssured;
-import com.jayway.restassured.response.Response;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
