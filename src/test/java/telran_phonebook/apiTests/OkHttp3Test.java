@@ -3,6 +3,7 @@ package telran_phonebook.apiTests;
 import api.dto.AuthErrorDto;
 import api.dto.AuthRequestDto;
 import api.dto.AuthResponseDto;
+import api.dto.ContactDto;
 import com.google.gson.Gson;
 import okhttp3.*;
 import org.testng.Assert;
@@ -16,6 +17,9 @@ public class OkHttp3Test {
     private String unregisteredEmail = "monketester666@gmail.com";
     private String password = "1q2W3e4R_";
     private String wrongPassword = "1q2W3e400";
+
+    private String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Im1vbmtldGVzdGVyMTNAZ21haWwuY29tIn0.2mn74VPKLxAbMdSfjJlUyEwhbniQHC01dOCTJSMhwaI";
+
 
     public static final MediaType JSON = MediaType.get("application/json");
 
@@ -69,5 +73,42 @@ public class OkHttp3Test {
             Assert.assertEquals(response.code(), 400);
         }
 
+    }
+
+    @Test
+    public void contactEditTest() throws IOException {
+        Gson gson = new Gson();
+        OkHttpClient client = new OkHttpClient();
+        int i = (int) (System.currentTimeMillis()/1000/3600);
+        ContactDto contact = ContactDto.builder()
+                .id(6649)
+                .name("JohnEdited")
+                .lastName("Doe" + i)
+                .email("johndoe"+i+"@gmail.com")
+                .phone("+100000" + i)
+                .address("New York")
+                .description("edited")
+                .build();
+        RequestBody requestBody = RequestBody.create(gson.toJson(contact),JSON);
+
+        Request request = new Request.Builder()
+                .url("https://contacts-telran.herokuapp.com/api/contact")
+                .put(requestBody)
+                .addHeader("Authorization", token)
+                .build();
+
+        Response response = client.newCall(request).execute();
+        String responseJson = response.body().string();
+        if(response.isSuccessful()){
+            ContactDto contactEdited = gson.fromJson(responseJson, ContactDto.class);
+            System.out.println(contactEdited.getName());
+            System.out.println(contactEdited.getId());
+            Assert.assertEquals(response.code(), 200);
+            Assert.assertEquals(contactEdited.getName(), "JohnEdited");
+        } else{
+            AuthErrorDto authErrorDto = gson.fromJson(responseJson, AuthErrorDto.class);
+            System.out.println(authErrorDto.getMessage());
+            Assert.assertEquals(response.code(), 404);
+        }
     }
 }

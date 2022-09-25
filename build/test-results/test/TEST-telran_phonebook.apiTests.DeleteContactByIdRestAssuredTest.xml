@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="telran_phonebook.apiTests.DeleteContactByIdRestAssuredTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-20T09:57:10" hostname="LAPTOP-7JRM91AM" time="0.35">
-  <properties/>
-  <testcase name="deleteContactByIdPositive" classname="telran_phonebook.apiTests.DeleteContactByIdRestAssuredTest" time="0.35"/>
-  <system-out><![CDATA[Contact was deleted!
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

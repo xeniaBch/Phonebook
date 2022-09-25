@@ -93,4 +93,15 @@ public class RestAssuredTest {
             System.out.println("=============================================");
         }
     }
+
+    //API method is broken, always returns 500
+    @Test
+    public void deleteContactByIdPositive(){
+        String status = given().header("Authorization", token)
+                .delete("clear")
+                .then()
+                .assertThat().statusCode(200)
+                .extract().path("status");
+        System.out.println(status);
+    }
 }
